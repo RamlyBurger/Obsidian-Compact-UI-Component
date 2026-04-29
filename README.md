@@ -1,0 +1,1 @@
+Obsidian Compact UI Component
