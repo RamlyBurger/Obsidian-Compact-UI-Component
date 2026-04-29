@@ -1,0 +1,15 @@
+/* Shared color variables used by the other snippets. */
+
+:root {
+    --interactive-accent-variant: #386bb3;
+
+    --atom-gray-1: #5c6370;
+    --atom-gray-2: #abb2bf;
+    --atom-red: #e06c75;
+    --atom-orange: #d19a66;
+    --atom-green: #98c379;
+    --atom-aqua: #56b6c2;
+    --atom-purple: #c678dd;
+    --atom-blue: #61afef;
+    --atom-yellow: #e5c07b;
+}

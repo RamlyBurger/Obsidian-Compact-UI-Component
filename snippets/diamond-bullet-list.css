@@ -1,0 +1,40 @@
+/* Diamond bullet list markers. */
+
+/* Bullet List */
+:is(.cm-formatting-list-ul, .markdown-rendered ul > li)>.list-bullet::after {
+    content: "◈";
+    height: unset;
+    width: unset;
+    background: transparent !important;
+}
+
+/* Bullet List - Odd row */
+:is(ul:not(li > ul) > li > ul > li,
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li,
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li,
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li ul > li > ul > li)>.list-bullet::after,
+:is(.HyperMD-list-line-2,
+    .HyperMD-list-line-4,
+    .HyperMD-list-line-6,
+    .HyperMD-list-line-8) .cm-formatting-list-ul>.list-bullet::after {
+    content: "⬦";
+}
+
+/* Bullet List - Odd row - Reading mode */
+:is(ul:not(li > ul) > li > ul > li,
+    /* Second level */
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li,
+    /* Fourth level */
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li,
+    /* Sixth level */
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li ul > li > ul > li
+
+    /* Eighth level */
+)>.list-bullet::after {
+    content: "⬦" !important;
+}
+
+/* Bullet list in table */
+.table-wrapper .list-bullet::after {
+    padding-inline-start: 30px;
+}

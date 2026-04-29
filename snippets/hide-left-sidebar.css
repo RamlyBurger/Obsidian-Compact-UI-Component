@@ -1,0 +1,17 @@
+/* Hide the collapsed left sidebar ribbon. */
+
+/* Left sidebar */
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+    /* flex: 0px; */
+    /* transition: flex 0.5s ease; */
+    display: none;
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed:hover {
+    /* flex: 0 0 var(--ribbon-width); */
+    /* transition: flex 0.05s ease; */
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed:not(:hover) {
+    /* transition-delay: 1.5s; */
+}

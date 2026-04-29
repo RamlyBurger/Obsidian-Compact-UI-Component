@@ -1,0 +1,8 @@
+/* Active editor row highlight. */
+
+/* Active row */
+body:not(:has(table .cm-active.cm-line)) .cm-active.cm-line,
+.cm-table-widget:has(.cm-active.cm-line) {
+    background-color: rgba(69, 122, 146, 0.3) !important;
+    box-shadow: inset 0 0 0 1px rgba(69, 122, 146, 0.3) !important;
+}

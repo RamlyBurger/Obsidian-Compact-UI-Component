@@ -1,0 +1,40 @@
+/* Compact source and live preview spacing. */
+
+/* Source Mode */
+/* line number gap */
+.markdown-source-view.mod-cm6 .cm-gutters {
+    padding-inline-end: 0px !important;
+    margin-inline-end: 0px !important;
+}
+
+/* Bullet list gap */
+.cm-formatting-list-ul,
+.cm-formatting-list-ol {
+    padding-inline-start: 5px !important;
+}
+
+/* List color */
+body {
+    --list-marker-color: var(--link-external-color);
+}
+
+.is-live-preview .list-bullet {
+    min-width: 0em;
+    padding-right: 5px;
+}
+
+/* Note title */
+.inline-title {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/* Gap of line number */
+.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+    padding: 0px 5px 0px 5px !important;
+}
+
+/* Hide collapse icon */
+[data-mode="source"] .collapse-indicator.collapse-icon {
+    visibility: hidden;
+}

@@ -1,0 +1,7 @@
+/* Inline code color. */
+
+/* Inline Code */
+.cm-s-obsidian span.cm-inline-code,
+code:not(pre code) {
+    color: var(--atom-aqua) !important;
+}

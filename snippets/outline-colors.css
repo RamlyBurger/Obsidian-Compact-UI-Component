@@ -1,0 +1,33 @@
+/* Outline panel heading level colors. */
+
+/* Outline */
+/* Level 1 - Red */
+.view-content.node-insert-event .tree-item-self .tree-item-inner,
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 24px"] .tree-item-inner {
+    color: var(--atom-red) !important;
+}
+
+/* Level 2 - Orange */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 41px"] .tree-item-inner {
+    color: var(--atom-orange) !important;
+}
+
+/* Level 3 - Green */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 58px"] .tree-item-inner {
+    color: var(--atom-green) !important;
+}
+
+/* Level 4 - Blue */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 75px"] .tree-item-inner {
+    color: var(--atom-blue) !important;
+}
+
+/* Level 5 - Purple */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 92px"] .tree-item-inner {
+    color: var(--atom-aqua) !important;
+}
+
+/* Level 6 - Orange */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 109px"] .tree-item-inner {
+    color: var(--atom-purple) !important;
+}

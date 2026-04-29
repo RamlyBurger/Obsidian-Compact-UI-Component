@@ -1,0 +1,49 @@
+/* Heading spacing, colors, and underline behavior. */
+
+/* Heading */
+/* Note Heading */
+.cm-s-obsidian .cm-line.HyperMD-header {
+    padding-top: 0px !important;
+}
+
+/* The line number height (Due to Heading) */
+.ͼ1 .cm-lineNumbers .cm-gutterElement {
+    padding: 0 3px 0 0px !important;
+}
+
+/* Heading Color */
+.cm-header-1,
+h1 {
+    color: var(--atom-red) !important;
+}
+
+.cm-header-2,
+h2 {
+    color: var(--atom-orange) !important;
+}
+
+.cm-header-3,
+h3 {
+    color: var(--atom-green) !important;
+}
+
+.cm-header-4,
+h4 {
+    color: var(--atom-blue) !important;
+}
+
+.cm-header-5,
+h5 {
+    color: var(--atom-aqua) !important;
+}
+
+.cm-header-6,
+h6 {
+    color: var(--atom-purple) !important;
+}
+
+/* H2 underline */
+body.h2-underline h2,
+body.h2-underline .HyperMD-header.HyperMD-header-2.cm-line {
+    border-bottom: none !important;
+}

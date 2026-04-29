@@ -1,0 +1,45 @@
+/* Table row colors and hover styling. */
+
+/* Table */
+/* Table odd row and NOT header color */
+table tr:nth-child(odd):not(:has(th)) {
+    background-color: var(--color-base-00) !important;
+}
+
+/* Table even row and header color */
+table thead tr,
+table tr:nth-child(even) {
+    background-color: var(--code-background) !important;
+}
+
+/* Light up the row hovered */
+table tr:hover {
+    filter: brightness(1.1) !important;
+    /* Increase brightness by 10% */
+}
+
+/* Table Content row highlight on hover */
+table tr:hover {
+    box-shadow: inset 0 0 0 2px var(--atom-aqua) !important;
+}
+
+/* Table Header row highlight on hover */
+table tr:has(th:hover) {
+    /* outline: 2px solid var(--color-red) !important; */
+}
+
+/* Ensure that header cells (th) on hover are also styled */
+table tr:hover th {
+    /* background-color: var(--text-selection) !important; */
+    /* color: rgb(255, 255, 255) !important; */
+}
+
+/* Ensure that data cells (td) on hover are also styled */
+table tr:hover td {
+    /* background-color: var(--text-selection) !important; */
+    /* color: rgb(255, 255, 255) !important; */
+}
+
+table tr th {
+    font-weight: normal !important;
+}

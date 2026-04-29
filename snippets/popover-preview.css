@@ -1,0 +1,11 @@
+/* Hover preview popover sizing and padding. */
+
+/* Preview Popup Window Width For Link */
+.popover.hover-popover>.markdown-embed {
+    width: 40vw;
+}
+
+/* Preview Popup Window Padding For Link */
+.popover.hover-popover>.markdown-embed>.markdown-embed-content .markdown-preview-view {
+    padding: 10px !important;
+}

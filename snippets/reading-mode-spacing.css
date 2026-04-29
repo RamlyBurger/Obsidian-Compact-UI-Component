@@ -1,0 +1,90 @@
+/* Reading mode spacing for embeds, headings, lists, paragraphs, and code blocks. */
+
+/* Reading */
+/* Embed Padding */
+.markdown-embed {
+    padding-left: 5px;
+}
+
+/* Embed Heading */
+.markdown-embed-title {
+    color: rgb(238, 30, 238);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+/* Default margin for all headings */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Remove margin for any heading when it's immediately preceded by another heading */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6)+ :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0px !important;
+}
+
+/* Remove the first heading margin-top */
+.markdown-rendered> :is(h1, h2, h3, h4, h5, h6):first-of-type {
+    margin-top: 0px !important;
+}
+
+/* List indent space */
+.markdown-rendered ul,
+.markdown-rendered ol {
+    padding-inline-start: 30px !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
+/* List indent space */
+.markdown-rendered ul>li,
+.markdown-rendered ol>li {
+    margin-inline-start: 0 !important;
+}
+
+/* Outermost space */
+.markdown-preview-view {
+    padding: 0px 5px 0px 20px;
+}
+
+/* Heading height */
+.markdown-reading-view table {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+/* line height */
+.markdown-rendered p {
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+}
+
+/* Codeblock margin */
+.markdown-rendered pre {
+    /* padding: 0px 0px; */
+    /* margin: 0px 0px; */
+}
+
+.markdown-rendered div:has(> :is(p, pre, table, ul, ol))+div> :is(h1, h2, h3, h4, h5, h6) {
+    /* margin-top: 0px; */
+}
+
+h1,
+.markdown-rendered h1,
+h2,
+.markdown-rendered h2,
+h3,
+.markdown-rendered h3,
+h4,
+.markdown-rendered h4,
+h5,
+.markdown-rendered h5 {
+    /* margin-block-end: 0px; */
+}

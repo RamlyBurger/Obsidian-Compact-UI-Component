@@ -1,0 +1,24 @@
+/* Sidebar note and folder colors. */
+
+/* Sidebar Note color */
+.tree-item-self.is-clickable.nav-file-title,
+.tree-item-self.is-clickable.nav-folder-title {
+    /* color: rgb(68, 168, 226); */
+}
+
+/* Sidebar active note background color */
+.tree-item-self.is-clickable.nav-file-title.is-active,
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus {
+    background-color: var(--interactive-accent-variant) !important;
+    color: #FFFFFF !important;
+}
+
+/* Sidebar note background color when on hover */
+.tree-item.nav-file:hover>.tree-item-self.nav-file-title.tappable.is-clickable,
+.tree-item-self.is-clickable.nav-file-title.recent-files-title:hover {
+    background-color: var(--text-selection);
+}
+
+.tree-item-icon.collapse-icon.nav-folder-collapse-indicator {
+    /* filter: invert(0%) sepia(50%) saturate(2476%) hue-rotate(86deg) brightness(1000%) contrast(120%); */
+}

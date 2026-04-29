@@ -1,0 +1,11 @@
+/* Compact panel padding. */
+
+/* Right Panel Padding */
+.workspace-leaf-content .view-content {
+    padding: 0px !important;
+}
+
+/* Right Panel Padding */
+.mod-sidedock .markdown-preview-view {
+    padding: 0px;
+}

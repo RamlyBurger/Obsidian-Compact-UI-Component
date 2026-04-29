@@ -1,0 +1,19 @@
+/* Optional icon animation rules. */
+
+/* Icon */
+.clickable-icon,
+.workspace-tab-header-inner {
+    /* animation: colorChange 30s infinite; */
+}
+
+/* @keyframes colorChange {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg) saturate(5000%) brightness(100%) contrast(120%);
+    }
+
+    50% {
+        filter: hue-rotate(360deg) saturate(5000%) brightness(100%) contrast(120%);
+    }
+} */
