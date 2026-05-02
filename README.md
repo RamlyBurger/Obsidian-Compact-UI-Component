@@ -112,11 +112,11 @@ Shared color variables used by the other snippets.
 
 Optional snippets live in `optional-snippets/`. These are stronger visual tweaks that you can enable only when you want the extra effect.
 
-### [Animation Cursor](optional-snippets/animation-cursor.css)
+### [Animation Icons](optional-snippets/animation-icons.css)
 
 | Before | After |
 | --- | --- |
-| <img src="Screenshots/Obsidian-before-animation-icon.png" alt="Animation cursor before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-animation-icon.png" alt="Animation cursor after snippet" width="100%"> |
+| <img src="Screenshots/Obsidian-before-animation-icon.png" alt="Animation icons before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-animation-icon.png" alt="Animation icons after snippet" width="100%"> |
 
 ### [Animation Title](optional-snippets/animation-title.css)
 

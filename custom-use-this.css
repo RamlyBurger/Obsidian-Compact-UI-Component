@@ -1,0 +1,544 @@
+/* ==========================================================================
+   Regular Snippets
+   ========================================================================== */
+
+/* ==========================================================================
+   Root
+   Source: snippets/root.css
+   ========================================================================== */
+
+/* Shared color variables used by the other snippets. */
+
+:root {
+    --interactive-accent-variant: #386bb3;
+
+    --atom-gray-1: #5c6370;
+    --atom-gray-2: #abb2bf;
+    --atom-red: #e06c75;
+    --atom-orange: #d19a66;
+    --atom-green: #98c379;
+    --atom-aqua: #56b6c2;
+    --atom-purple: #c678dd;
+    --atom-blue: #61afef;
+    --atom-yellow: #e5c07b;
+}
+
+/* Print Bullet List */
+@media print {
+    /* Remove underline */
+    .metadata-container .internal-link,
+    .markdown-rendered .internal-link {
+        color: var(--atom-blue);
+        text-decoration: none !important;
+    }
+}
+
+
+/* ==========================================================================
+   Active Row
+   Source: snippets/active-row.css
+   ========================================================================== */
+
+/* Active editor row highlight. */
+
+/* Active row */
+body:not(:has(table .cm-active.cm-line)) .cm-active.cm-line,
+.cm-table-widget:has(.cm-active.cm-line) {
+    background-color: rgba(69, 122, 146, 0.3) !important;
+    box-shadow: inset 0 0 0 1px rgba(69, 122, 146, 0.3) !important;
+}
+
+
+/* ==========================================================================
+   Compact Source View
+   Source: snippets/compact-source-view.css
+   ========================================================================== */
+
+/* Compact source and live preview spacing. */
+
+/* Source Mode */
+/* line number gap */
+.markdown-source-view.mod-cm6 .cm-gutters {
+    padding-inline-end: 0px !important;
+    margin-inline-end: 0px !important;
+}
+
+/* Bullet list gap */
+.cm-formatting-list-ul,
+.cm-formatting-list-ol {
+    padding-inline-start: 5px !important;
+}
+
+.is-live-preview .list-bullet {
+    min-width: 0em;
+    padding-right: 5px;
+}
+
+/* Note title */
+.inline-title {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/* Gap of line number */
+.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+    padding: 0px 5px 0px 5px !important;
+}
+
+/* Hide collapse icon */
+[data-mode="source"] .collapse-indicator.collapse-icon {
+    visibility: hidden;
+}
+
+
+/* ==========================================================================
+   Compact Reading Mode
+   Source: snippets/compact-reading-mode.css
+   ========================================================================== */
+
+/* Reading mode spacing for embeds, headings, lists, paragraphs, and code blocks. */
+
+/* Reading */
+/* Embed Padding */
+.markdown-embed {
+    padding-left: 5px;
+}
+
+/* Embed Heading */
+.markdown-embed-title {
+    color: rgb(238, 30, 238);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+/* Default margin for all headings */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Remove margin for any heading when it's immediately preceded by another heading */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6)+ :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0px !important;
+}
+
+/* Remove the first heading margin-top */
+.markdown-rendered> :is(h1, h2, h3, h4, h5, h6):first-of-type {
+    margin-top: 0px !important;
+}
+
+/* List indent space */
+.markdown-rendered ul,
+.markdown-rendered ol {
+    padding-inline-start: 30px !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
+/* List indent space */
+.markdown-rendered ul>li,
+.markdown-rendered ol>li {
+    margin-inline-start: 0 !important;
+}
+
+/* Outermost space */
+.markdown-preview-view {
+    padding: 0px 5px 0px 20px;
+}
+
+/* Heading height */
+.markdown-reading-view table {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+/* line height */
+.markdown-rendered p {
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+}
+
+/* Codeblock margin */
+.markdown-rendered pre {
+    /* padding: 0px 0px; */
+    /* margin: 0px 0px; */
+}
+
+.markdown-rendered div:has(> :is(p, pre, table, ul, ol))+div> :is(h1, h2, h3, h4, h5, h6) {
+    /* margin-top: 0px; */
+}
+
+h1,
+.markdown-rendered h1,
+h2,
+.markdown-rendered h2,
+h3,
+.markdown-rendered h3,
+h4,
+.markdown-rendered h4,
+h5,
+.markdown-rendered h5 {
+    /* margin-block-end: 0px; */
+}
+
+
+/* ==========================================================================
+   Diamond Bullet List
+   Source: snippets/diamond-bullet-list.css
+   ========================================================================== */
+
+/* Diamond bullet list markers. */
+
+/* List color */
+body {
+    --list-marker-color: var(--link-external-color);
+}
+
+/* Bullet List */
+:is(.cm-formatting-list-ul, .markdown-rendered ul > li)>.list-bullet::after {
+    content: "◈";
+    height: unset;
+    width: unset;
+    background: transparent !important;
+}
+
+/* Bullet List - Odd row */
+:is(ul:not(li > ul) > li > ul > li,
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li,
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li,
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li ul > li > ul > li)>.list-bullet::after,
+:is(.HyperMD-list-line-2,
+    .HyperMD-list-line-4,
+    .HyperMD-list-line-6,
+    .HyperMD-list-line-8) .cm-formatting-list-ul>.list-bullet::after {
+    content: "⬦";
+}
+
+/* Bullet List - Odd row - Reading mode */
+:is(ul:not(li > ul) > li > ul > li,
+    /* Second level */
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li,
+    /* Fourth level */
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li,
+    /* Sixth level */
+    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li ul > li > ul > li
+
+    /* Eighth level */
+)>.list-bullet::after {
+    content: "⬦" !important;
+}
+
+/* Bullet list in table */
+.table-wrapper .list-bullet::after {
+    padding-inline-start: 30px;
+}
+
+/* Print-only list and link styling. */
+
+/* Print Bullet List */
+@media print {
+
+    ul>li,
+    ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li {
+        list-style-type: "◈ ";
+    }
+
+    ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li {
+        list-style-type: "⬦ ";
+    }
+
+    /* Put an icon after every link */
+    .metadata-container .internal-link::after,
+    .markdown-rendered .internal-link::after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url('public/images/874d8b8e340f75575caa.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+}
+
+
+/* ==========================================================================
+   Heading Colors
+   Source: snippets/heading-colors.css
+   ========================================================================== */
+
+/* Heading spacing, colors, and underline behavior. */
+
+/* Heading */
+/* Note Heading */
+.cm-s-obsidian .cm-line.HyperMD-header {
+    padding-top: 0px !important;
+}
+
+/* The line number height (Due to Heading) */
+.ͼ1 .cm-lineNumbers .cm-gutterElement {
+    padding: 0 3px 0 0px !important;
+}
+
+/* Heading Color */
+.cm-header-1,
+h1 {
+    color: var(--atom-red) !important;
+}
+
+.cm-header-2,
+h2 {
+    color: var(--atom-orange) !important;
+}
+
+.cm-header-3,
+h3 {
+    color: var(--atom-green) !important;
+}
+
+.cm-header-4,
+h4 {
+    color: var(--atom-blue) !important;
+}
+
+.cm-header-5,
+h5 {
+    color: var(--atom-aqua) !important;
+}
+
+.cm-header-6,
+h6 {
+    color: var(--atom-purple) !important;
+}
+
+/* H2 underline */
+body.h2-underline h2,
+body.h2-underline .HyperMD-header.HyperMD-header-2.cm-line {
+    border-bottom: none !important;
+}
+
+
+/* ==========================================================================
+   Inline Code
+   Source: snippets/inline-code.css
+   ========================================================================== */
+
+/* Inline code color. */
+
+/* Inline Code */
+.cm-s-obsidian span.cm-inline-code,
+code:not(pre code) {
+    color: var(--atom-aqua) !important;
+}
+
+
+/* ==========================================================================
+   Outline Colors
+   Source: snippets/outline-colors.css
+   ========================================================================== */
+
+/* Outline panel heading level colors. */
+
+/* Outline */
+/* Level 1 - Red */
+.view-content.node-insert-event .tree-item-self .tree-item-inner,
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 24px"] .tree-item-inner {
+    color: var(--atom-red) !important;
+}
+
+/* Level 2 - Orange */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 41px"] .tree-item-inner {
+    color: var(--atom-orange) !important;
+}
+
+/* Level 3 - Green */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 58px"] .tree-item-inner {
+    color: var(--atom-green) !important;
+}
+
+/* Level 4 - Blue */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 75px"] .tree-item-inner {
+    color: var(--atom-blue) !important;
+}
+
+/* Level 5 - Purple */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 92px"] .tree-item-inner {
+    color: var(--atom-aqua) !important;
+}
+
+/* Level 6 - Orange */
+.view-content.node-insert-event .tree-item-self[style*="padding-inline-start: 109px"] .tree-item-inner {
+    color: var(--atom-purple) !important;
+}
+
+
+/* ==========================================================================
+   Outline Spacing
+   Source: snippets/outline-spacing.css
+   ========================================================================== */
+
+/* Compact panel padding. */
+
+/* Right Panel Padding */
+.workspace-leaf-content .view-content {
+    padding: 0px !important;
+}
+
+/* Right Panel Padding */
+.mod-sidedock .markdown-preview-view {
+    padding: 0px;
+}
+
+
+/* ==========================================================================
+   Popover Preview
+   Source: snippets/popover-preview.css
+   ========================================================================== */
+
+/* Hover preview popover sizing and padding. */
+
+/* Preview Popup Window Width For Link */
+.popover.hover-popover>.markdown-embed {
+    width: 40vw;
+}
+
+/* Preview Popup Window Padding For Link */
+.popover.hover-popover>.markdown-embed>.markdown-embed-content .markdown-preview-view {
+    padding: 10px !important;
+}
+
+
+/* ==========================================================================
+   Scrollbar
+   Source: snippets/scrollbar.css
+   ========================================================================== */
+
+/* Scrollbar styling. */
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-selection) !important;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(35, 255, 255, 1) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #386bb3 !important;
+}
+
+
+/* ==========================================================================
+   Hide Left Sidebar
+   Source: snippets/hide-left-sidebar.css
+   ========================================================================== */
+
+/* Hide the collapsed left sidebar ribbon. */
+
+/* Left sidebar */
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+    display: none;
+}
+
+
+/* ==========================================================================
+   Sidebar Active Note
+   Source: snippets/sidebar-active-note.css
+   ========================================================================== */
+
+/* Sidebar note and folder colors. */
+
+/* Sidebar Note color */
+.tree-item-self.is-clickable.nav-file-title,
+.tree-item-self.is-clickable.nav-folder-title {
+    /* color: rgb(68, 168, 226); */
+}
+
+/* Sidebar active note background color */
+.tree-item-self.is-clickable.nav-file-title.is-active,
+.tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus {
+    background-color: #386bb3 !important;
+    color: #FFFFFF !important;
+}
+
+/* Sidebar note background color when on hover */
+.tree-item.nav-file:hover>.tree-item-self.nav-file-title.tappable.is-clickable,
+.tree-item-self.is-clickable.nav-file-title.recent-files-title:hover {
+    background-color: var(--text-selection);
+}
+
+.tree-item-icon.collapse-icon.nav-folder-collapse-indicator {
+    /* filter: invert(0%) sepia(50%) saturate(2476%) hue-rotate(86deg) brightness(1000%) contrast(120%); */
+}
+
+
+/* ==========================================================================
+   Table Styles
+   Source: snippets/table-styles.css
+   ========================================================================== */
+
+/* Table row colors and hover styling. */
+
+/* Table */
+/* Table odd row and NOT header color */
+table tr:nth-child(odd):not(:has(th)) {
+    background-color: var(--color-base-00) !important;
+}
+
+/* Table even row and header color */
+table thead tr,
+table tr:nth-child(even) {
+    background-color: var(--code-background) !important;
+}
+
+/* Light up the row hovered */
+table tr:hover {
+    filter: brightness(1.1) !important;
+    /* Increase brightness by 10% */
+}
+
+/* Table Content row highlight on hover */
+table tr:hover {
+    box-shadow: inset 0 0 0 2px var(--atom-aqua) !important;
+}
+
+/* Table Header row highlight on hover */
+table tr:has(th:hover) {
+    /* outline: 2px solid var(--color-red) !important; */
+}
+
+/* Ensure that header cells (th) on hover are also styled */
+table tr:hover th {
+    /* background-color: var(--text-selection) !important; */
+    /* color: rgb(255, 255, 255) !important; */
+}
+
+/* Ensure that data cells (td) on hover are also styled */
+table tr:hover td {
+    /* background-color: var(--text-selection) !important; */
+    /* color: rgb(255, 255, 255) !important; */
+}
+
+table tr th {
+    font-weight: normal !important;
+}
