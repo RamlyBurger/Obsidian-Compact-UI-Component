@@ -21,3 +21,11 @@ It works on a clean Obsidian install with no plugins or themes required. If you 
 ### After (After Added My Custom Style)
 
 <img src="Screenshots/Obsidian-after.png" alt="Obsidian after view" width="100%">
+
+## Snippet Effects
+
+I will add each snippet effect here as I record more demos.
+
+### [Animation Title](snippets/animation-title.css)
+
+<img src="Screenshots/animation-title.gif" alt="Animation title CSS snippet effect" width="100%">
