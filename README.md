@@ -2,6 +2,10 @@
 
 ## Preview
 
-| Before | After |
-| --- | --- |
-| ![Obsidian before view](Screenshots/Obsidian-before.png) | ![Obsidian after view](Screenshots/Obsidian-after.png) |
+### Before
+
+<img src="Screenshots/Obsidian-before.png" alt="Obsidian before view" width="100%">
+
+### After
+
+<img src="Screenshots/Obsidian-after.png" alt="Obsidian after view" width="100%">
