@@ -15,5 +15,5 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--interactive-accent-variant) !important;
+    background-color: #386bb3 !important;
 }

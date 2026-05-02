@@ -14,9 +14,13 @@ It works on a clean Obsidian install with no plugins or themes required. If you 
 
 ## Preview
 
-| Before (Original Obsidian Style) | After (After Added My Custom Style) |
-| --- | --- |
-| <img src="Screenshots/Obsidian-before.png" alt="Obsidian before view" width="100%"> | <img src="Screenshots/Obsidian-after.png" alt="Obsidian after view" width="100%"> |
+### Before (Original Obsidian Style)
+
+<img src="Screenshots/Obsidian-before.png" alt="Obsidian before view" width="100%">
+
+### After (After Added My Custom Style)
+
+<img src="Screenshots/Obsidian-after.png" alt="Obsidian after view" width="100%">
 
 ## Snippet Effects
 
@@ -33,6 +37,18 @@ Each optional snippet effect can be used on its own, so the demos below show the
 | Before | After |
 | --- | --- |
 | <img src="Screenshots/Obsidian-before-outline-spacing.png" alt="Outline before spacing snippet" width="100%"> | <img src="Screenshots/Obsidian-after-outline-spacing.png" alt="Outline after spacing snippet" width="100%"> |
+
+### [Inline Code](snippets/inline-code.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-inline-code.png" alt="Inline code before color snippet" width="100%"> | <img src="Screenshots/Obsidian-after-inline-code.png" alt="Inline code after color snippet" width="100%"> |
+
+### [Scrollbar](snippets/scrollbar.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-scrollbar.png" alt="Scrollbar before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-scrollbar.png" alt="Scrollbar after snippet" width="100%"> |
 
 ### [Animation Title](snippets/animation-title.css)
 
