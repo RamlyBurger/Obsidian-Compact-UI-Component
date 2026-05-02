@@ -1,0 +1,115 @@
+/* Custom Plugins CSS */
+/* Recent Files */
+/* Fixed width for date box for consistent alignment */
+.recent-files-date-box {
+    display: inline-block;
+    width: 135px;
+    /* Fixed width for alignment */
+    /* background-color: #993232; */
+    /* color: white; */
+    padding: 2px 6px;
+    border-radius: 5px;
+    text-align: center;
+    /* Center text inside the date box */
+    margin-left: auto;
+    flex-shrink: 0;
+    /* Prevents the date box from shrinking */
+}
+
+.nav-folder-children .tree-item.nav-file.recent-files-file:nth-child(odd) {
+    background-color: var(--code-background);
+}
+
+.nav-folder-children .tree-item.nav-file.recent-files-file:nth-child(even) {
+    background-color: var(--color-base-00);
+}
+
+/* Padding */
+.tree-item-self.is-clickable.nav-file-title.recent-files-title {
+    padding: 0px 0px;
+}
+
+/* Omnisearch */
+/* OmniSearch plugin css snippets */
+/* 搜尋到的符合字串高亮 */
+.omnisearch-highlight {
+    /* color: var(--text-normal); */
+    /* background-color: var(--text-highlight-bg); */
+}
+
+.omnisearch-result {
+    border-bottom: 1px solid gray;
+}
+
+/* alternative row style */
+.omnisearch-result:nth-of-type(even) {
+    background-color: var(--code-background);
+    /*var(--text-highlight-bg);*/
+    /*border-bottom: 1px solid var(--text-highlight-bg);*/
+}
+
+/* Matches result on the right */
+/* Main container */
+.omnisearch-result {
+    flex-direction: column;
+}
+
+/* Title styling */
+.omnisearch-result__title {
+    flex: 1;
+    /* Takes available space */
+}
+
+/* Counter styling aligned to the right */
+.omnisearch-result__counter {
+    margin-left: auto;
+    /* Pushes to the right */
+    white-space: nowrap;
+    /* Prevents wrapping */
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* Matches result on the right */
+
+/* Selected row */
+.suggestion-item.omnisearch-result.is-selected {
+    background: var(--text-selection) !important;
+}
+
+/* Found text */
+.omnisearch-highlight {
+    color: var(--red) !important;
+    background-color: transparent !important;
+}
+
+/* Calendar */
+#calendar-container table tr:nth-child(odd):not(:has(th)) {
+    background-color: var(--color-background-day) !important;
+}
+
+#calendar-container table thead tr,
+#calendar-container table tr:nth-child(even) {
+    background-color: var(--color-background-day) !important;
+}
+
+#calendar-container .day.svelte-q3wqg9:hover {
+    background-color: var(--text-selection) !important;
+}
+
+#calendar-container table tr:hover {
+    filter: none !important;
+}
+
+#calendar-container table tr:hover {
+    box-shadow: none !important;
+}
+
+#calendar-container table tr th {
+    font-weight: normal !important;
+}
+
+#calendar-container h3 {
+    color: var(--color-base-100) !important;
+}
