@@ -13,3 +13,13 @@
     --atom-blue: #61afef;
     --atom-yellow: #e5c07b;
 }
+
+/* Print Bullet List */
+@media print {
+    /* Remove underline */
+    .metadata-container .internal-link,
+    .markdown-rendered .internal-link {
+        color: var(--atom-blue);
+        text-decoration: none !important;
+    }
+}

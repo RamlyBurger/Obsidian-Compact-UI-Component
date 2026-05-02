@@ -43,3 +43,39 @@ body {
 .table-wrapper .list-bullet::after {
     padding-inline-start: 30px;
 }
+
+/* Print-only list and link styling. */
+
+/* Print Bullet List */
+@media print {
+
+    ul>li,
+    ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li {
+        list-style-type: "◈ ";
+    }
+
+    ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li,
+    ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li {
+        list-style-type: "⬦ ";
+    }
+
+    /* Put an icon after every link */
+    .metadata-container .internal-link::after,
+    .markdown-rendered .internal-link::after {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url('public/images/874d8b8e340f75575caa.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+}

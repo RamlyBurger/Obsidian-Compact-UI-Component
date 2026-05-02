@@ -80,11 +80,9 @@ Shared color variables used by the other snippets.
 
 ### [Popover Preview](snippets/popover-preview.css)
 
-Adjusts hover preview popover sizing and padding.
-
-### [Print View](snippets/print-view.css)
-
-Applies print-only list and link styling.
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-popover-preview.png" alt="Popover preview before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-popover-preview.png" alt="Popover preview after snippet" width="100%"> |
 
 ### [Scrollbar](snippets/scrollbar.css)
 
