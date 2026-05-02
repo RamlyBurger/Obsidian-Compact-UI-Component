@@ -80,7 +80,9 @@ Applies print-only list and link styling.
 
 ### [Reading Mode Spacing](snippets/reading-mode-spacing.css)
 
-Compacts reading mode spacing for embeds, headings, lists, paragraphs, and code blocks.
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-reading-mode-spacing.png" alt="Reading mode spacing before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-reading-mode-spacing.png" alt="Reading mode spacing after snippet" width="100%"> |
 
 ### [Scrollbar](snippets/scrollbar.css)
 
