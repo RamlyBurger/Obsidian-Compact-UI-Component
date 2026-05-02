@@ -1,5 +1,10 @@
 /* Diamond bullet list markers. */
 
+/* List color */
+body {
+    --list-marker-color: var(--link-external-color);
+}
+
 /* Bullet List */
 :is(.cm-formatting-list-ul, .markdown-rendered ul > li)>.list-bullet::after {
     content: "◈";

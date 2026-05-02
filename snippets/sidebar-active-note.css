@@ -9,7 +9,7 @@
 /* Sidebar active note background color */
 .tree-item-self.is-clickable.nav-file-title.is-active,
 .tree-item-self.nav-file-title.tappable.is-clickable.is-active.has-focus {
-    background-color: var(--interactive-accent-variant) !important;
+    background-color: #386bb3 !important;
     color: #FFFFFF !important;
 }
 

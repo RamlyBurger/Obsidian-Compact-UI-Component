@@ -24,7 +24,13 @@ It works on a clean Obsidian install with no plugins or themes required. If you 
 
 ## Snippet Effects
 
-Each optional snippet effect can be used on its own, so the demos below show the change from a clean Obsidian view to the snippet-enabled view.
+Each snippet effect can be used on its own, so the demos below show the change from a clean Obsidian view to the snippet-enabled view.
+
+### [Active Row](snippets/active-row.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-active-row.png" alt="Active row before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-active-row.png" alt="Active row after snippet" width="100%"> |
 
 ### [Outline Colors](snippets/outline-colors.css)
 
@@ -50,6 +56,18 @@ Each optional snippet effect can be used on its own, so the demos below show the
 | --- | --- |
 | <img src="Screenshots/Obsidian-before-scrollbar.png" alt="Scrollbar before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-scrollbar.png" alt="Scrollbar after snippet" width="100%"> |
 
-### [Animation Title](snippets/animation-title.css)
+### [Diamond Bullet List](snippets/diamond-bullet-list.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-diamond-bullet-list.png" alt="Diamond bullet list before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-diamond-bullet-list.png" alt="Diamond bullet list after snippet" width="100%"> |
+
+### [Sidebar Active Note](snippets/sidebar-active-note.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-sidebar-active-note.png" alt="Sidebar active note before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-sidebar-active-note.png" alt="Sidebar active note after snippet" width="100%"> |
+
+### [Animation Title](optional-snippets/animation-title.css)
 
 <img src="Screenshots/animation-title.gif" alt="Animation title CSS snippet effect" width="100%">
