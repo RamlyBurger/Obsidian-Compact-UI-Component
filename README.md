@@ -90,6 +90,12 @@ Shared color variables used by the other snippets.
 | --- | --- |
 | <img src="Screenshots/Obsidian-before-scrollbar.png" alt="Scrollbar before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-scrollbar.png" alt="Scrollbar after snippet" width="100%"> |
 
+### [Hide Left Sidebar](snippets/hide-left-sidebar.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-hide-left-sidebar.png" alt="Hide left sidebar before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-hide-left-sidebar.png" alt="Hide left sidebar after snippet" width="100%"> |
+
 ### [Sidebar Active Note](snippets/sidebar-active-note.css)
 
 | Before | After |
@@ -106,22 +112,18 @@ Shared color variables used by the other snippets.
 
 Optional snippets live in `optional-snippets/`. These are stronger visual tweaks that you can enable only when you want the extra effect.
 
-### [Animation Background](optional-snippets/animation-background.css)
+### [Animation Cursor](optional-snippets/animation-cursor.css)
 
-Optional background image and overlay rules.
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-animation-icon.png" alt="Animation cursor before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-animation-icon.png" alt="Animation cursor after snippet" width="100%"> |
 
 ### [Animation Title](optional-snippets/animation-title.css)
 
 <img src="Screenshots/animation-title.gif" alt="Animation title CSS snippet effect" width="100%">
 
-### [Hide Left Sidebar](optional-snippets/hide-left-sidebar.css)
-
-Hides the collapsed left sidebar ribbon.
-
-### [Icon Animation](optional-snippets/icon-animation.css)
-
-Optional icon animation rules.
-
 ### [Minecraft Cursor](optional-snippets/minecraft-cursor.css)
 
-Optional custom cursor rule.
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-minecraft-cursor.png" alt="Minecraft cursor before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-minecraft-cursor.png" alt="Minecraft cursor after snippet" width="100%"> |

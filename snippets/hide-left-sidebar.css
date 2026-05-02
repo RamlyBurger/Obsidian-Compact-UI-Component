@@ -1,0 +1,6 @@
+/* Hide the collapsed left sidebar ribbon. */
+
+/* Left sidebar */
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+    display: none;
+}
