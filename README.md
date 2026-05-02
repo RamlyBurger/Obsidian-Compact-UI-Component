@@ -138,10 +138,14 @@ For normal use, you only need to download [custom-use-this.css](custom-use-this.
 
 If the `snippets` folder does not exist yet, create it inside `.obsidian`. After that, open Obsidian and go to `Settings` -> `Appearance` -> `CSS snippets`, refresh the list, and enable `custom-use-this`.
 
-The `backup/` folder keeps the original combined CSS files for reference. You do not need those files for the normal installation.
-
 <p align="center">
   <img src="Screenshots/Obsidian-installation-path.png" alt="Obsidian CSS snippets installation path" width="85%">
+</p>
+
+Enable `custom-use-this` from the CSS snippets list:
+
+<p align="center">
+  <img src="Screenshots/Obsidian-how-to-enable.png" alt="Enable custom-use-this CSS snippet in Obsidian" width="85%">
 </p>
 
 ## Thanks
