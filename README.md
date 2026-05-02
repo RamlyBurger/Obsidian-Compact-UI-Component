@@ -96,7 +96,9 @@ Compacts reading mode spacing for embeds, headings, lists, paragraphs, and code 
 
 ### [Table Styles](snippets/table-styles.css)
 
-Adds table row colors and hover styling.
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-table-styles.png" alt="Table styles before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-table-styles.png" alt="Table styles after snippet" width="100%"> |
 
 ## Optional Snippets
 
