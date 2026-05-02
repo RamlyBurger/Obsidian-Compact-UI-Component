@@ -14,17 +14,25 @@ It works on a clean Obsidian install with no plugins or themes required. If you 
 
 ## Preview
 
-### Before (Original Obsidian Style)
-
-<img src="Screenshots/Obsidian-before.png" alt="Obsidian before view" width="100%">
-
-### After (After Added My Custom Style)
-
-<img src="Screenshots/Obsidian-after.png" alt="Obsidian after view" width="100%">
+| Before (Original Obsidian Style) | After (After Added My Custom Style) |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before.png" alt="Obsidian before view" width="100%"> | <img src="Screenshots/Obsidian-after.png" alt="Obsidian after view" width="100%"> |
 
 ## Snippet Effects
 
-I will add each snippet effect here as I record more demos.
+Each optional snippet effect can be used on its own, so the demos below show the change from a clean Obsidian view to the snippet-enabled view.
+
+### [Outline Colors](snippets/outline-colors.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-outline-colors.png" alt="Outline before color snippet" width="100%"> | <img src="Screenshots/Obsidian-after-outline-colors.png" alt="Outline after color snippet" width="100%"> |
+
+### [Outline Spacing](snippets/outline-spacing.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-outline-spacing.png" alt="Outline before spacing snippet" width="100%"> | <img src="Screenshots/Obsidian-after-outline-spacing.png" alt="Outline after spacing snippet" width="100%"> |
 
 ### [Animation Title](snippets/animation-title.css)
 
