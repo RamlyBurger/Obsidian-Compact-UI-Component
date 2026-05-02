@@ -48,7 +48,9 @@ Tightens source mode and live preview spacing.
 
 ### [Heading Colors](snippets/heading-colors.css)
 
-Adds heading spacing, colors, and underline behavior.
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-heading-colors.png" alt="Heading colors before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-heading-colors.png" alt="Heading colors after snippet" width="100%"> |
 
 ### [Inline Code](snippets/inline-code.css)
 
