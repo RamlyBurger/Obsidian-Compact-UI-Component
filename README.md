@@ -38,7 +38,15 @@ Shared color variables used by the other snippets.
 
 ### [Compact Source View](snippets/compact-source-view.css)
 
-Tightens source mode and live preview spacing.
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-compact-source-view.png" alt="Compact source view before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-compact-source-view.png" alt="Compact source view after snippet" width="100%"> |
+
+### [Compact Reading Mode](snippets/compact-reading-mode.css)
+
+| Before | After |
+| --- | --- |
+| <img src="Screenshots/Obsidian-before-compact-reading-mode.png" alt="Compact reading mode before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-compact-reading-mode.png" alt="Compact reading mode after snippet" width="100%"> |
 
 ### [Diamond Bullet List](snippets/diamond-bullet-list.css)
 
@@ -77,12 +85,6 @@ Adjusts hover preview popover sizing and padding.
 ### [Print View](snippets/print-view.css)
 
 Applies print-only list and link styling.
-
-### [Reading Mode Spacing](snippets/reading-mode-spacing.css)
-
-| Before | After |
-| --- | --- |
-| <img src="Screenshots/Obsidian-before-reading-mode-spacing.png" alt="Reading mode spacing before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-reading-mode-spacing.png" alt="Reading mode spacing after snippet" width="100%"> |
 
 ### [Scrollbar](snippets/scrollbar.css)
 
