@@ -127,3 +127,27 @@ Optional snippets live in `optional-snippets/`. These are stronger visual tweaks
 | Before | After |
 | --- | --- |
 | <img src="Screenshots/Obsidian-before-minecraft-cursor.png" alt="Minecraft cursor before snippet" width="100%"> | <img src="Screenshots/Obsidian-after-minecraft-cursor.png" alt="Minecraft cursor after snippet" width="100%"> |
+
+## Installation
+
+For normal use, you only need to download [custom-use-this.css](custom-use-this.css), then place it inside your vault's snippets folder:
+
+```text
+...Your Vault Name\.obsidian\snippets
+```
+
+If the `snippets` folder does not exist yet, create it inside `.obsidian`. After that, open Obsidian and go to `Settings` -> `Appearance` -> `CSS snippets`, refresh the list, and enable `custom-use-this`.
+
+The `backup/` folder keeps the original combined CSS files for reference. You do not need those files for the normal installation.
+
+<p align="center">
+  <img src="Screenshots/Obsidian-installation-path.png" alt="Obsidian CSS snippets installation path" width="85%">
+</p>
+
+## Thanks
+
+Thanks for reading through the whole note. I just wanted to share this with anyone who needs a more compact Obsidian setup.
+
+<p align="center">
+  <img src="Screenshots/quby-thank-you.gif" alt="Quby thank you sticker" width="140">
+</p>
