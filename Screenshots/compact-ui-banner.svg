@@ -1,0 +1,52 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Obsidian Compact UI Component</title>
+  <desc id="desc">A simple banner with an Obsidian-style faceted logo and the project title.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111018"/>
+      <stop offset="0.55" stop-color="#171322"/>
+      <stop offset="1" stop-color="#0d1520"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(330 210) rotate(18) scale(310 210)">
+      <stop stop-color="#8b5cf6" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gemA" x1="168" y1="82" x2="338" y2="312" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="gemB" x1="298" y1="70" x2="242" y2="326" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="gemC" x1="132" y1="240" x2="352" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="softShadow" x="70" y="30" width="360" height="360" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="420" rx="36" fill="url(#bg)"/>
+  <rect width="1600" height="420" rx="36" fill="url(#glow)"/>
+  <path d="M114 338C278 268 394 260 548 320C720 386 878 378 1038 306C1202 232 1362 230 1486 276" stroke="#8b5cf6" stroke-opacity="0.14" stroke-width="2"/>
+  <path d="M130 104C310 136 442 128 604 80C780 28 968 42 1118 120C1270 198 1398 204 1490 164" stroke="#22d3ee" stroke-opacity="0.1" stroke-width="2"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M246 58L362 128L384 258L288 352L154 320L96 194L148 96L246 58Z" fill="#201735" stroke="#c4b5fd" stroke-opacity="0.4" stroke-width="3"/>
+    <path d="M246 58L250 190L148 96L246 58Z" fill="url(#gemA)"/>
+    <path d="M250 190L362 128L246 58L250 190Z" fill="#8b5cf6"/>
+    <path d="M250 190L384 258L362 128L250 190Z" fill="url(#gemB)"/>
+    <path d="M250 190L288 352L384 258L250 190Z" fill="#4c1d95"/>
+    <path d="M250 190L154 320L288 352L250 190Z" fill="url(#gemC)"/>
+    <path d="M250 190L96 194L154 320L250 190Z" fill="#5b21b6"/>
+    <path d="M250 190L148 96L96 194L250 190Z" fill="#7c3aed"/>
+    <path d="M148 96L250 190L362 128M96 194L250 190L384 258M154 320L250 190L288 352" stroke="#ddd6fe" stroke-opacity="0.26" stroke-width="2"/>
+    <path d="M208 130L248 94L314 134" stroke="#ffffff" stroke-opacity="0.34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="500" y="208" fill="#f7f5ff" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="74" font-weight="750" letter-spacing="0">
+    Obsidian Compact UI Component
+  </text>
+</svg>
